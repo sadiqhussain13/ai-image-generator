@@ -1,70 +1,57 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AI Image Generator
+![Version](https://img.shields.io/badge/Version-%5E0.1.0-blue.svg?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/node.js-%3E%3D14.17.0-brightgreen.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%5E18.3.1-blue.svg?style=for-the-badge&logo=react&logoColor=white)
 
-## Available Scripts
+## About
+This project is an AI image generator that uses the Hugging Face API to generate images based on user input. The project is built using React, Express, and Node.js.
 
-In the project directory, you can run:
+## Installation
+#### 1. Clone the repository
+Clone the repository using the following command:
+```bash
+git clone "https://github.com/sadiqhussain13/ai-image-generator.git"
+cd ai-image-generator
+```
+#### 2. Install dependencies
+Install the necessary dependencies using the following command:
+```bash
+npm install
+```
+#### 3. Set up environment variables
+Create a `.env` file in the root of the project and add the following environment variable:
+```bash
+REACT_APP_HUGGINGFACE_API=YOUR_API_KEY
+```
+Replace `YOUR_API_KEY` with your actual Hugging Face API key.
 
-### `npm start`
+## Running the Application
+#### 1. Start the backend server
+Start the backend server using the following command:
+```bash
+npm run start:backend
+```
+This will start the Express server on port 8000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 2. Start the frontend server
+Start the frontend server using the following command:
+```bash
+npm run start:frontend
+```
+This will start the React development server on port 3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 3. Open the application
+Open the application in your web browser by navigating to http://localhost:3000.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Technology | Description |
+|------------|-------------|
+| ![React](https://img.shields.io/badge/react-%5E18.3.1-blue.svg?style=for-the-badge&logo=react&logoColor=white) | Frontend framework |
+| ![Express](https://img.shields.io/badge/Express-%5E4.19.2-green.svg?style=for-the-badge&logo=express&logoColor=white) | Backend framework |
+| ![Node.js](https://img.shields.io/badge/node.js-%3E%3D14.17.0-brightgreen.svg?style=for-the-badge&logo=node.js&logoColor=white) | Runtime environment |
+| ![Hugging Face API](https://img.shields.io/badge/Hugging%20Face%20API-%5E3.1.0-orange.svg?style=for-the-badge&logo=huggingface&logoColor=white) | AI image generation API |
+| ![Axios](https://img.shields.io/badge/Axios-%5E1.7.3-purple.svg?style=for-the-badge&logo=axios&logoColor=white) | HTTP client library |
+| ![CORS](https://img.shields.io/badge/CORS-%5E2.8.5-yellow.svg?style=for-the-badge&logo=cors&logoColor=white) | Cross-origin resource sharing library |
+| ![dotenv](https://img.shields.io/badge/dotenv-%5E16.4.5-pink.svg?style=for-the-badge&logo=dotenv&logoColor=white) | Environment variable management library |
