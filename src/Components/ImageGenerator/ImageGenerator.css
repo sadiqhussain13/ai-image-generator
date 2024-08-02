@@ -22,7 +22,7 @@
 }
 .img-loading img{
     width: 312px;
-    outline: 3px solid #d744a1;
+    outline: 1px solid #d744a1;
     border-radius: 10px;
 }
 .search-box{
@@ -71,9 +71,17 @@
 .loading-bar-full{
     width: 312px;
     height: 3px;
-    background: #d744a1;
+    background:linear-gradient(to right, #431e48,30%, #933787,70%, #d744a1);
     transition: 12s;
 }
 .display-none{
     display: none;
 }
+.footer img{
+    width: 15px;
+    height: 15px;
+}
+.footer a {
+    text-decoration: none;
+    color: yellow;
+  }

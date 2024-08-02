@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import './ImageGenerator.css';
 import default_image from '../Assets/panel_1.jpeg';
+import huggingfaceLogo from '../Assets/huggingface_logo-noborder.png';
 
 const ImageGenerator = () => {
     const [image_url, setImage_url] = useState("/");
@@ -60,6 +61,7 @@ const ImageGenerator = () => {
             <input type="text" ref={inputRef} className="search-input" placeholder="Describe what you want to see"/>
             <div className="generate-btn" onClick={() =>{generateImage()}}>Generate</div>
         </div>
+        <div className="footer">Powered by <a href="https://huggingface.co/alvdansen/littletinies" target="_blank" rel="noopener noreferrer"><img src={huggingfaceLogo} alt="Hugging Face"/>Hugging Face</a></div>
     </div>
     )
 };
