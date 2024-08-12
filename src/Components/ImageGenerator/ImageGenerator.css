@@ -16,14 +16,60 @@
     color: #d744a1;
     font-weight: 600;
 }
+.image-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .image-container img {
+    position: relative;
+  }
+
+.model-label {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #1f3540;
+    color: #ffffff;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+}
+  
+.model-select select{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #1f3540;
+    color: #ffffff;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.model-select select option {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #1f3540;
+    color: #ffffff;
+}
+  
+.model-select select option[selected] {
+    background-color: #d744a1;
+    color: #ffffff;
+}
+
 .img-loading{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 .img-loading img{
     width: 312px;
-    outline: 1px solid #d744a1;
-    border-radius: 10px;
+    margin: 0 15px;
 }
 .search-box{
     display: flex;
@@ -63,15 +109,30 @@
 .loading-bar{
     width: 0px;
     height: 3px;
-    background: #d744a1;
+    background: #ff0000;
 }
 .loading-text{
     font-size: 18px;
 }
 .loading-bar-full{
-    width: 312px;
-    height: 3px;
-    background:linear-gradient(to right, #431e48,30%, #933787,70%, #d744a1);
+    width: 1020px;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        #ff0000,
+        8.33%, #ff9900, 
+        16.67%, #ffff00,
+        25%, #00ff00,
+        33.33%, #0000ff,
+        41.67%, #4b0082,
+        50%, #ee82ee, 
+        58.33%, #ff00ff,
+        66.67%, #ffcc00, 
+        75%, #00ffff,
+        83.33%, #ff00ff,
+        91.67%, #ffcc00,
+        100%, #ffcc00
+      );
     transition: 12s;
 }
 .display-none{
